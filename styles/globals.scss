@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;600;700&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');// font-family: 'Hind', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
+}
+
+h1, h2, a, p{
+  color: white;
+}
+strong, p {
+  position: relative;
+  z-index: 1;
+}
+
+button, .button {
+  width: fit-content;
+  color: white;
+  border: none;
+  // background: linear-gradient(45deg, #1D282F, #393E57);
+  background-color: rgb(206, 206, 206);
+  padding: 12px 28px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: solid 0px transparent;
+  cursor: pointer;
+  color: #111;
+  transition: all .2s ease-in;
+
+}
+button:hover, .button:hover {
+   background-color: white;
+  transition: all .2s ease-out;
+}
+
+li {
+  cursor: pointer;
+  list-style: none;
+}
+
+
+.box {
+  padding: 0px 50px;
+}
+
+.container {
+  // display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  // background-image:
+  //   linear-gradient(75deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.932),  rgba(0, 0, 0, 0.795), rgba(117, 19, 93, 0)),
+  //   url('/church-all.png');
+  // background-size: cover;
+}
+.divider {
+  height: 1px;
+  background-color: white;
+  width: 100px;
+  margin: 15px 0;
+  
+}
+.particles {
+  // position: fixed;
+  // // top:100px;
+  // left: 0;
+  // height: 1500px;
+
+}
+.main {
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  width: 100%;
+  // background-image:
+  //   linear-gradient(75deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.932),  rgba(0, 0, 0, 0.795), rgba(117, 19, 93, 0)),
+  //   url('/church-all.png');
+  // background-size: cover;
+
+  h2 {
+    position: absolute;
+    bottom: 0px;
+    color: rgb(156, 156, 156);
+    // left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 300;
+
+  }
+
+}
+
+
+.header {
+  font-size: 12px;
+  // flex: 0 1 auto;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+  // background-color: black;
+  // width:  200px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+
+    li  {
+      padding: 5px;
+      margin: 0 10px;
+
+      svg {
+        fill: white;
+      }
+      svg {
+        color: rgb(255, 255, 255);
+        fill: rgb(0,0,0);
+        transition: fill .2s ease-in-out;
+      }
+      svg:hover {
+        transition: fill .2s ease-in-out;
+        fill: white;
+
+      }
+    }
+
+  }
+
+  span {
+    color:white;
+    text-transform: uppercase;
+    margin: 0 50px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-family: 'Hind', sans-serif;
+  }
+  
+}
+
+
+.hero {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+  z-index: 2;
+
+
+  .hero-right {
+
+    h1 {
+      font-size: 6em;
+      text-align: center;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .cristo {
+      font-size: 9em;
+    }
+  }
+  h2 {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.foot { 
+  height: 50px;
+  width: 100%;
+  bottom: 0px;
+  flex: 0 1 auto;
+  z-index: 99;
+  position: fixed;
+  background-color: #111;
+  border-top: solid 1px white;
+
+  .foot-links  {
+    display: flex;
+    justify-content: space-evenly;
+    .active  {
+      a {
+        font-weight: 700;
+        color:  white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+      a::before {
+        content: "";
+        position: relative;
+        display: block;
+        height: 1px;
+        width:  40px;  
+        top: 18px;
+        background-color: rgba(255, 255, 255, 0.603);
+      }
+    }
+    li {
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+      transition: all .2s ease-in-out;
+      a {
+        color: #adadad;
+        transition: all .2s ease-in-out;
+      }
+        }
+    li:hover {
+      a {
+         color: white;
+      }
+    }
+  }
+}
+
+.links {
+  position: relative;
+  margin-top: 100px;
+  z-index: 2;
+
+  li { 
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 50px 0;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 3px;
+    font-weight: 300;
+    width: fit-content;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  svg{
+    opacity: 1;
+    width: 0;
+    font-size: 30px;
+    margin:  0 10px;
+     transition: all 0.3s ease;
+  }
+   
+
+  li:hover {
+    transform: skewX(-20deg);
+    transition: transform 0.3s ease;
+    transition-delay: 0.3s;
+    a {
+      // font-weight: 600;
+      color: black ;
+      transition: color font-weight 0.3s ease;
+      transition-delay: 0.3s;
+    }
+
+    svg {
+      width: 25px;
+      opacity: 1;
+      color: black;
+      transition: all 0.3s ease;
+      transition-delay: 0.3s;
+      
+    }
+
+  }
+  // a:hover {
+  //   color: black ;
+  //   transition: color 0.3s ease;
+  //   transition-delay: 0.3s;
+
+  // }
+  a: {
+    color: white;
+  }
+  
+
+  li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  li>* {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  li:hover::before {
+    transform: scaleX(1);
+    height: 50px;
+    transition: transform 0.3s ease-out, height 0.3s ease 0.2s;
+    // background-color: #111;
+  }
+}
+
+
+.about-only {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.788), rgba(0, 0, 0, 0.849)), url('/church-all.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: center;
+}
+.about {
+  padding: 5% 50px 15%;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // height: 100%;
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .about-details {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .card {
+      position: relative;
+      margin: 10px;
+      // background: linear-gradient(45deg, #1D282F, #393E57);
+      background-color: white;
+      padding: 10px 20px;
+      width: 250px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 16px;
+        color:#111;
+      }
+      h2 {
+        font-size: 14px;
+        color:#111;
+        font-weight: 600;
+      }
+      p{
+        color:#111;
+        font-size: 13px;
+      }
+      .num {
+        position: absolute;
+        bottom : 0;
+        left: 230px;
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(175, 175, 175);
+      }
+    }
+
+  }
+}
+
+.directions {
+
+  height: 100vh;
+  // background-color: red;
+  // background-image: linear-gradient(45deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.541)), url('/map-crop.png');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.801)), url('/map-elgin.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+    .info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 100px 50px;
+    z-index: 1;
+   
+    
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+  }
+  .map {
+    // width: 50vw;
+    // height: 100vh;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    opacity: .3;
+    height: 100%;
+    z-index: 0;
+    // background-color: red;
+    
+  
+  }
+  // .map-grid {
+  //   width: 100%;
+  //   position: relative;
+  // }
+}
+
+.learn {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 15% 50px;
+
+  // background-color: red;
+
+  a{
+    margin: 20px 0;
+  }
+  p  {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+  }
+}
+
+.info-circle {
+  position: fixed;
+  bottom: 20;
+  right: 20;
+  background-color: white;
+  border: solid 1px black;
+  cursor: pointer;
+  z-index: 99;
+  p, h1 {
+    text-align: center;
+    color:black;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  
+ 
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+  .header {
+    li  {
+      margin: 0 4px!important;
+
+    }
+  
+    span {
+      color:white;
+      text-transform: uppercase;
+      margin: 0 20px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-family: 'Hind', sans-serif;
+    }
+    
+  }
+  .about {
+    padding: 15% 50px 20%;
+  }
+
+  .learn {
+
+    padding: 45% 50px;
+    
+    a{
+      margin: 20px 0;
+    }
+    p  {
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+
+  .card {
+    width: 100%!important;
+  }
+
+  .foot { 
+    position: fixed;
+    z-index: 99;
+    .foot-links  {
+      padding: 0;
+      ul {
+      }
+      li {
+        font-size: 10px;   
+    }
+    li:hover {
+      font-size: 12px;
+      line-height: 10px;
+    }
+
+  }
+  
+}
+
+.links {
+  position: relative;
+  margin-top: 70px;
+  z-index: 2;
+
+  li { 
+
+    justify-content: flex-start;
+    padding: 10px 0px;
+    margin: 20px 0;
+    font-size: 18px;
+    width: 300px;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+
+  svg{
+    opacity: 1;
+    width: 30px;
+    font-size: 30px;
+    margin:  0 10px;
+     transition: all 0.3s ease;
+  }
+   
+
+  li:hover {
+    transform: skewX(-20deg);
+    transition: transform 0.3s ease;
+    transition-delay: 0.3s;
+    a {
+      // font-weight: 600;
+      color: black ;
+      transition: color font-weight 0.3s ease;
+      transition-delay: 0.3s;
+    }
+
+    svg {
+      width: 25px;
+      opacity: 1;
+      color: black;
+      transition: all 0.3s ease;
+      transition-delay: 0.3s;
+      
+    }
+
+  }
+
+  a: {
+    color: white;
+  }
+  
+
+  li::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+
+
+  li:hover::before {
+    transform: scaleX(1);
+    height: 100%;
+    transition: transform 0.3s ease-out, height 0.3s ease 0.2s;
+    // background-color: #111;
+  }
+}
+
+.directions {
+
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+    .info {
+    width: 100%;
+    padding: 40% 50px;
+    align-items: center;
+    h1 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 14px;
+      
+
+    }
+  }
+  .map {
+    display: none;
+  
+  }
+ 
+}
+
+.info-cont {
+  bottom: 50!important;
+}
+
+.info-circle {
+  position: fixed;
+  
+ 
+}
+
+}
+
+
+
