@@ -15,9 +15,7 @@ export default function Home() {
         <div className='hero'>
       <MouseParallaxContainer>
           <MouseParallaxChild factorX={0.03} factorY={0.05} >
-          <div className='hero-left'>
             <Links/>
-          </div>
           </MouseParallaxChild>
           </MouseParallaxContainer>
         </div>

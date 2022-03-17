@@ -8,6 +8,7 @@ function aprender() {
 
   return (
     <div className="learn" >
+      <div>
         <motion.h1
           key={1}
           initial={initial}
@@ -51,9 +52,10 @@ function aprender() {
             rel="noreferrer"
           >
             {" "}
-            Haga clic aquí para comenzar a aprender más{" "}
+            clic para aprender más{" "}
           </a>
         </motion.div> 
+      </div>
     </div>
   );
 }

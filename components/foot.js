@@ -16,7 +16,7 @@ function Foot() {
         <ul className="foot-links">
             {routes.map((route, i) => (
                 <li key={i} className={router.pathname == route.route ? 'active' :  'none'} >
-                    <Link scroll={false} href={route.route} >{route.title}</Link>
+                    <Link passHref scroll={false} href={route.route} >{route.title}</Link>
                 </li>
             ))}
         </ul>

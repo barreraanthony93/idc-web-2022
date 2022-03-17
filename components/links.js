@@ -26,7 +26,7 @@ function links() {
       }}
         >
           {val.icon}
-          <Link  href={val.route}>{val.question}</Link>
+          <Link passHref href={val.route}>{val.question}</Link>
         </motion.li>
       ))}
     </ul>

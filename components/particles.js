@@ -48,7 +48,7 @@ useEffect(() => {
         duration: 1, delay: 1.2}} className='particles'
          >
         </motion.div>
-        <div style={{zIndex: 0, opacity:.4, top:'50%',  left: isMobile ? width / 2 : '53%' ,  height: height, width: width, transform:'translate(-50%, -50%)',  position:'fixed'}}>
+        <div style={{zIndex: 0, opacity:.4, top:'50%',  left: isMobile ? width / 1.7 : '53%' ,  height: height, width: width, transform:'translate(-50%, -50%)',  position:'fixed'}}>
         <BrowserView>
           {
             width > 0 &&
