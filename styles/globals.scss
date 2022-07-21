@@ -368,7 +368,8 @@ li {
       position: relative;
       margin: 10px;
       // background: linear-gradient(45deg, #1D282F, #393E57);
-      background-color: white;
+      // background-color: white;
+      border: solid 1px white;
       padding: 10px 20px;
       width: 250px;
       border-radius: 12px;
@@ -376,15 +377,16 @@ li {
       flex-direction: column;
       h1 {
         font-size: 16px;
-        color:#111;
+        color:#eee;
+        height: 30px;
       }
       h2 {
         font-size: 14px;
-        color:#111;
+        color:#eee;
         font-weight: 600;
       }
       p{
-        color:#111;
+        color:#eee;
         font-size: 13px;
       }
       .num {

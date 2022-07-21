@@ -98,7 +98,7 @@ function creencia() {
             >
               {val.text}
             </motion.p>
-            <div className="about-details">
+            <div className="about-details" >
               {val.details &&
                 val.details.map((el, ii) => (
                   <motion.div
@@ -113,7 +113,7 @@ function creencia() {
                       delay: ii * 0.1,
                     }}
                   >
-                    <h1>{el.title}</h1>
+                    <h1 style={{height: 0}}>{el.title}</h1>
                     <div
                       className="divider"
                       style={{ backgroundColor: "black" }}
