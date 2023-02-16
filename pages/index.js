@@ -19,7 +19,7 @@ export default function Home() {
           </MouseParallaxChild>
           </MouseParallaxContainer>
         </div>
-        <Particles/> 
+        {/* <Particles/>  */}
         <motion.h2  initial={{opacity: 0, y:50}} animate={{opacity:1, y: 0}} exit={{opacity: 0, y: 50}}  
         transition={{
               ease: "easeInOut",

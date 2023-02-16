@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import Info from '../components/info'
 import Script from 'next/script'
-
+import Background from '../components/background' 
 const variants = {
   hidden: { opacity: 1, x: 0, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -22,6 +22,8 @@ function MyApp({ Component, pageProps, router }) {
   }
   return (
     <div className="container">
+      <div className='background-gradient'></div>
+      <Background/>
       <Header />
       <AnimatePresence exitBeforeEnter>
       <motion.div

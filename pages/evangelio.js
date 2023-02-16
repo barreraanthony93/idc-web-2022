@@ -115,16 +115,15 @@ function creencia() {
                   >
                     <h1 style={{height: 0}}>{el.title}</h1>
                     <div
-                      className="divider"
-                      style={{ backgroundColor: "black" }}
+                      className="divider" 
                     ></div>
                     <h2>{el.text}</h2>
                     <p>{el.verse}</p>
-                    <p className="num">{ii + 1}</p>
+                    {/* <p className="num">{ii + 1}</p> */}
                   </motion.div>
                 ))}
             </div>
-            {i < array.length - 1 && (
+            {/* {i < array.length - 1 && (
               <motion.div
                key={221}
                 className="divider"
@@ -137,7 +136,7 @@ function creencia() {
                   delay: i * 0.2,
                 }}
               ></motion.div>
-            )}{" "}
+            )}  */}
           </div>
         ))}
     </div>

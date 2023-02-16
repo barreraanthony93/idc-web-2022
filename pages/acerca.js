@@ -120,11 +120,7 @@ function acerca() {
                     delay: ii * 0.1,
                   }}
                 >
-                  <h1>{el.title}</h1>
-                  <div
-                    className="divider"
-                    style={{ backgroundColor: "black" }}
-                  ></div>
+                  <h1>{el.title}</h1> 
                   <p>{el.text}</p>
                 </motion.div>
               ))}

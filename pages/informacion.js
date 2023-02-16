@@ -12,7 +12,7 @@ function informacion() {
       transition={{
         ease: "easeInOut",
         duration: duration,
-          }}className='directions main'>
+          }} className='directions main'>
         <div className='info'>
           <AnimatePresence>
           <motion.h1
