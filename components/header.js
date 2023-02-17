@@ -17,11 +17,11 @@ function Header() {
           }}
         >
           <li
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
+            // onMouseEnter={() => setIsHover(true)}
+            // onMouseLeave={() => setIsHover(false)}
           >
-            <Link href="/">
-              <img src={onHover ? "/fish-f.svg" : "/fish-e.svg"}  alt="IDCE" width="40px" />
+            <Link passHref href="/">
+              <img src={ "/fish-e.svg"}  alt="IDCE" width="35px" />
             </Link>
           </li>
           <li>

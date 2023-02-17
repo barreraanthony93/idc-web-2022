@@ -102,7 +102,7 @@ function creencia() {
               {val.details &&
                 val.details.map((el, ii) => (
                   <motion.div
-                    className="card"
+                    className="card glass-card"
                     key={ii}
                     initial={initial}
                     animate={animate}

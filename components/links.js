@@ -18,6 +18,7 @@ function links() {
     className="links">
       {routes.map((val, i) => (
         <motion.li key={i} 
+        // className="glass-card"
         initial={{opacity: 0, x: -50}}
         animate={{opacity:1, x: 0}}
         exit={{opacity: 0, x: -50}}

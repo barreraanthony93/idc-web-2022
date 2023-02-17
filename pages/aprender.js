@@ -50,9 +50,8 @@ function aprender() {
             target="_blank"
             className="button"
             rel="noreferrer"
-          >
-            {" "}
-            clic para aprender más{" "}
+          > 
+            clic para aprender más 
           </a>
         </motion.div> 
       </div>

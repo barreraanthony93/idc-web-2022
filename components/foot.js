@@ -12,7 +12,7 @@ function Foot() {
         {route: '/evangelio', title: 'Evangelio'},
     ]
   return (
-    <motion.div initial={{y:100}} animate={{y: 0}} exit={{y:100}} transition={{ease:'easeInOut', duration: 1, delay: 1 }} className='foot'>
+    <motion.div initial={{y:100}} animate={{y: 0}} exit={{y:100}} transition={{ease:'easeInOut', duration: 1, delay: 1 }} className='foot glass-card'>
         <ul className="foot-links">
             {routes.map((route, i) => (
                 <li key={i} className={router.pathname == route.route ? 'active' :  'none'} >

@@ -41,7 +41,7 @@ function Info({show}) {
       variants={variants}
       style={{
         position: "fixed",
-        bottom: 60 ,
+        bottom: 10 ,
         right: 20,
         borderRadius: 50,
       }}
